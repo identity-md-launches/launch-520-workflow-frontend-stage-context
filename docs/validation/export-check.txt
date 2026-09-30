@@ -1,0 +1,20 @@
+
+> comp-sepolia-interface@1.0.0 check:export
+> node scripts/export-deployment.mjs --check
+
+{
+  "status": "verified",
+  "sourceCommit": "c622a1dd8c1c9d94a16272080c765d00e9aba7ab",
+  "contractCount": 5,
+  "assetCount": 19,
+  "exportBytes": 676672,
+  "abiHashes": {
+    "LaunchToken": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+    "MockIMD": "785554a073881eadc16cf50ec69aefac00a95db003ed535556ed6a0f054c0e17",
+    "PriceFeed": "333fe01834bbc0b6131916860dafdde3d386c7b491f68d29d91dec03a61603bf",
+    "NhiFeed": "333fe01834bbc0b6131916860dafdde3d386c7b491f68d29d91dec03a61603bf",
+    "CDPVault": "a0dda71535f2de3d99e94ef64e866491366dc66cf0d7b8563ddff9550177b8c6",
+    "CompToken": "c80da5f74d5a8d99a762ded44c94029a0953469e050e85d74da380d751b74086",
+    "MockWorkOracle": "704b64283dcaed93661907220b38facfb1ac94aeaf53cb13b9be7a063147fac4"
+  }
+}

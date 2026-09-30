@@ -1,0 +1,42 @@
+
+> comp-sepolia-interface@1.0.0 test
+> playwright test
+
+
+Running 29 tests using 1 worker
+
+(node:133) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:133) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser.spec.ts:20:1 › disconnected public feeds and missing wallet recovery (1.0s)
+  ✓   2 tests/browser.spec.ts:32:1 › approval, deposit, mint, repay and debt-free withdrawal round trip (3.5s)
+  ✓   3 tests/browser.spec.ts:64:1 › unknown chain is added using manifest parameters before switching (1.7s)
+  ✓   4 tests/browser.spec.ts:79:1 › invalid amount and wallet rejection recover without sent transactions (1.7s)
+  ✓   5 tests/browser.spec.ts:94:1 › stale feeds pause borrowing but keep repayment and debt-free withdrawal available (2.4s)
+  ✓   6 tests/browser.spec.ts:117:1 › NHI refresh changes effective minimum while a marked position keeps its grace snapshot (3.7s)
+  ✓   7 tests/browser.spec.ts:143:1 › missing contract code disables signing and explains verification failure (860ms)
+  ✓   8 tests/browser.spec.ts:154:1 › desktop and mobile export load without overflow, with local type and reduced-motion support (1.8s)
+  ✓   9 tests/browser.spec.ts:181:1 › relative assets and runtime configuration load from a gateway subpath (810ms)
+  ✓  10 tests/browser.spec.ts:196:1 › a modified ABI asset fails hash verification before enabling controls (500ms)
+  ✓  11 tests/browser.spec.ts:206:1 › native buy quotes and swaps through configured router without approvals (1.9s)
+  ✓  12 tests/browser.spec.ts:224:1 › CPL sell requires explicit token and Permit2 approvals before swapping (2.9s)
+  ✓  13 tests/browser.spec.ts:244:1 › work mint spends available rights without adding collateral debt (1.9s)
+  ✓  14 tests/browser.spec.ts:257:1 › mark, grace-gated liquidation and clear recovered mark controls send expected actions (3.1s)
+  ✓  15 tests/protocol.spec.ts:23:1 › token inputs preserve every wei and reject silent rounding or unsafe notation (25ms)
+  ✓  16 tests/protocol.spec.ts:30:1 › NHI thresholds and ceiling preserve minimum collateral requirements (8ms)
+  ✓  17 tests/protocol.spec.ts:39:1 › borrowing and withdrawal ceilings remain safe at a one-wei boundary (11ms)
+  ✓  18 tests/protocol.spec.ts:53:1 › stale feeds stop risk-increasing amounts while debt-free exits remain available (5ms)
+  ✓  19 tests/protocol.spec.ts:61:1 › liquidation snapshot grace is actionable at its end and expires strictly after the window (8ms)
+  ✓  20 tests/protocol.spec.ts:70:1 › runtime configuration rejects chain, address and asset path divergence (26ms)
+  ✓  21 tests/protocol.spec.ts:82:1 › canonical ABI JSON sorts nested object keys while preserving array order (3ms)
+  ✓  22 tests/protocol.spec.ts:87:1 › simulation failures explain recoverable contract errors and wallet rejection (7ms)
+  ✓  23 tests/swap.spec.ts:33:1 › quote simulates the configured quoter and applies slippage without a wallet transaction (22ms)
+  ✓  24 tests/swap.spec.ts:44:1 › v4 encoding preserves sorted currencies, input settlement, minimum output and native ETH value (16ms)
+  ✓  25 tests/swap.spec.ts:66:1 › native buy simulates and confirms router execute without any approval (15ms)
+  ✓  26 tests/swap.spec.ts:79:1 › CPL sell uses two separate exact approvals before zero-value router execution (45ms)
+  ✓  27 tests/swap.spec.ts:105:1 › expired quotes, wrong chain and changed active account block signing (9ms)
+  ✓  28 tests/swap.spec.ts:117:1 › simulation failure and missing contract code prevent a wallet request (16ms)
+  ✓  29 tests/swap.spec.ts:129:1 › amount and slippage bounds prevent unusable quotes (15ms)
+
+  29 passed (32.3s)

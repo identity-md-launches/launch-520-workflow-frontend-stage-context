@@ -1,0 +1,88 @@
+
+> comp-sepolia-interface@1.0.0 check:rpc
+> node scripts/check-rpc.mjs
+
+{
+  "observedAt": "2026-09-30T18:59:35.301Z",
+  "sourceCommit": "c622a1dd8c1c9d94a16272080c765d00e9aba7ab",
+  "expectedChainId": 11155111,
+  "endpoints": [
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "chainId": 11155111,
+      "blockNumber": "11816612",
+      "blockTimestamp": "1790794764",
+      "contracts": [
+        {
+          "name": "LaunchToken",
+          "address": "0xd0fe552dc3aada9ac0e758ca4af985a86fdc488a",
+          "codeBytes": 1722
+        },
+        {
+          "name": "MockIMD",
+          "address": "0xe44ab81ce23d34e29383dd158a1dffeb1c10d439",
+          "codeBytes": 1966
+        },
+        {
+          "name": "PriceFeed",
+          "address": "0x61e34e8eab213f04c846f8ddbccbbcbb2c36be45",
+          "codeBytes": 4707
+        },
+        {
+          "name": "NhiFeed",
+          "address": "0x5f8fb8ae28d5150615d8f2f0bb85f2442ca90004",
+          "codeBytes": 4707
+        },
+        {
+          "name": "CDPVault",
+          "address": "0x12958d42d051c7b1cb804e122874f4a597678aad",
+          "codeBytes": 8087
+        }
+      ],
+      "vaultLinks": {
+        "imdToken": "0xE44AB81Ce23d34E29383dD158a1DfFEB1c10d439",
+        "compToken": "0xFCA540A40ca43613f5d2AAf66ff217C5632F6D2B",
+        "oracle": "0xca023CA9354DAEa441ea7b35790e8A3CFF8db0E6",
+        "priceFeed": "0x61E34e8eaB213F04c846f8DdbCcbbCBb2c36be45",
+        "nhiFeed": "0x5F8fb8aE28d5150615d8F2f0BB85F2442ca90004"
+      },
+      "derivedContracts": [
+        {
+          "name": "CompToken",
+          "address": "0xFCA540A40ca43613f5d2AAf66ff217C5632F6D2B",
+          "codeBytes": 2583,
+          "vault": "0x12958D42d051c7b1Cb804e122874F4a597678aaD"
+        },
+        {
+          "name": "MockWorkOracle",
+          "address": "0xca023CA9354DAEa441ea7b35790e8A3CFF8db0E6",
+          "codeBytes": 1003,
+          "vault": "0x12958D42d051c7b1Cb804e122874F4a597678aaD"
+        }
+      ],
+      "feeds": {
+        "PriceFeed": {
+          "latestValue": [
+            "0",
+            "0"
+          ],
+          "isStale": true,
+          "maxAge": "86400"
+        },
+        "NhiFeed": {
+          "latestValue": [
+            "0",
+            "0"
+          ],
+          "isStale": true,
+          "maxAge": "86400"
+        }
+      },
+      "minCR": "200",
+      "gracePeriod": "0",
+      "liquidationWindow": "86400",
+      "verified": true
+    }
+  ],
+  "status": "verified-read-only"
+}

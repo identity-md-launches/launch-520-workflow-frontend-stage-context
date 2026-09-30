@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "launchId": "e92c8d2b-42f2-471b-a573-81b63fe4b897",
+  "chainId": 11155111,
+  "sourceCommit": "c622a1dd8c1c9d94a16272080c765d00e9aba7ab",
+  "attestationHash": "b3a8b3c73455d5c1dac744030a27bff5a002286024ff937a1196d10a4266c3ff",
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "address": "0xd0fe552dc3aada9ac0e758ca4af985a86fdc488a",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "abiPath": "abi/LaunchToken.json"
+    },
+    {
+      "name": "MockIMD",
+      "address": "0xe44ab81ce23d34e29383dd158a1dffeb1c10d439",
+      "abiHash": "785554a073881eadc16cf50ec69aefac00a95db003ed535556ed6a0f054c0e17",
+      "abiPath": "abi/MockIMD.json"
+    },
+    {
+      "name": "PriceFeed",
+      "address": "0x61e34e8eab213f04c846f8ddbccbbcbb2c36be45",
+      "abiHash": "333fe01834bbc0b6131916860dafdde3d386c7b491f68d29d91dec03a61603bf",
+      "abiPath": "abi/PriceFeed.json"
+    },
+    {
+      "name": "NhiFeed",
+      "address": "0x5f8fb8ae28d5150615d8f2f0bb85f2442ca90004",
+      "abiHash": "333fe01834bbc0b6131916860dafdde3d386c7b491f68d29d91dec03a61603bf",
+      "abiPath": "abi/NhiFeed.json"
+    },
+    {
+      "name": "CDPVault",
+      "address": "0x12958d42d051c7b1cb804e122874f4a597678aad",
+      "abiHash": "a0dda71535f2de3d99e94ef64e866491366dc66cf0d7b8563ddff9550177b8c6",
+      "abiPath": "abi/CDPVault.json"
+    }
+  ],
+  "assets": [
+    {
+      "path": "THIRD-PARTY-NOTICES.txt",
+      "sha256": "f4324d5a48c2d04de198d4d50cbce78d29687aa778a5bab2f9d98f2445b08d8d"
+    },
+    {
+      "path": "abi/CDPVault.json",
+      "sha256": "c77a169e335e655f8a0cf8852107fa7d918595d9be600977ba9ac225d2da48a1"
+    },
+    {
+      "path": "abi/CompToken.json",
+      "sha256": "7869d9b8f40d87adf222eec1064a580684687b29f458c3586848969c4d6a73ce"
+    },
+    {
+      "path": "abi/LaunchToken.json",
+      "sha256": "9578fcb499b4ba5fac51462a67a2654d9f803e0ea3af9bdb19130ff695808542"
+    },
+    {
+      "path": "abi/MockIMD.json",
+      "sha256": "758f70fecf7ba99b5bf801062ed9d7a3ddb44b53b9158c3c672e46fef2e1c883"
+    },
+    {
+      "path": "abi/MockWorkOracle.json",
+      "sha256": "63cbcec79b9f29fed669632a6783ebf44bca12abc6446ba18dc7dd4277ed8530"
+    },
+    {
+      "path": "abi/NhiFeed.json",
+      "sha256": "09dea714fbb17a0412200d370d330dac0c6986fe30ab4c3d2964d25c70f76f47"
+    },
+    {
+      "path": "abi/PriceFeed.json",
+      "sha256": "09dea714fbb17a0412200d370d330dac0c6986fe30ab4c3d2964d25c70f76f47"
+    },
+    {
+      "path": "assets/ccip-C-djP3Vq.js",
+      "sha256": "8ac562dfd2a4d253c81c8cfeb3d0fe669f734bdfec5a5ba3322d7c466a580cd4"
+    },
+    {
+      "path": "assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+      "sha256": "328d50b6ece9ca25c46eea3e885ba497f6237f2fb84ef7b92f88e14a1a25e381"
+    },
+    {
+      "path": "assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    {
+      "path": "assets/ibm-plex-mono-latin-500-normal-CB9ihrfo.woff",
+      "sha256": "09f018c58556e5801ecc49d5b5275dcff4c73311c2af6b88e31c51d76d076a9d"
+    },
+    {
+      "path": "assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2",
+      "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22"
+    },
+    {
+      "path": "assets/ibm-plex-mono-latin-600-normal-BgSNZQsw.woff2",
+      "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83"
+    },
+    {
+      "path": "assets/ibm-plex-mono-latin-600-normal-DWFSQ4vo.woff",
+      "sha256": "cb96282f22c6f19112856fd6e0b34e2baefaf4ca6551e851d58c5ab0aabcd2be"
+    },
+    {
+      "path": "assets/index-B9obxgOM.js",
+      "sha256": "efe1cb7692a09350b1b624a4bb83ea43e5df2ec87961f8586d2f06fa551feef6"
+    },
+    {
+      "path": "assets/index-CvdorB5q.css",
+      "sha256": "b68b8993134eda7c02091525686ea41bec340674f874748b77e378a421e5489e"
+    },
+    {
+      "path": "frog.svg",
+      "sha256": "8552a2c31948886339d8709a4860592fa08028487f87abb05e4606991a9dce39"
+    },
+    {
+      "path": "index.html",
+      "sha256": "884c6fb9cac0ac6d5fbbc673bf1cbdef01d11e545bdba933770871327efdd5a8"
+    }
+  ],
+  "network": {
+    "chainId": 11155111,
+    "name": "Sepolia",
+    "testnet": true,
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "explorer": "https://sepolia.etherscan.io",
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "faucets": [
+      "https://cloud.google.com/application/web3/faucet/ethereum/sepolia",
+      "https://www.alchemy.com/faucets/ethereum-sepolia"
+    ],
+    "uniswapV4": {
+      "poolManager": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+      "universalRouter": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+      "quoter": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+      "stateView": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+      "positionManager": "0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4",
+      "permit2": "0x000000000022d473030f116ddee9f6b43ac78ba3"
+    }
+  },
+  "walletAddChain": {
+    "chainId": "0xaa36a7",
+    "chainName": "Sepolia",
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "blockExplorerUrls": [
+      "https://sepolia.etherscan.io"
+    ]
+  }
+}

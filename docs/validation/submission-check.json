@@ -1,0 +1,13 @@
+{
+  "inventoryExcludesOwnReport": true,
+  "trackedBaseAndProposedFiles": 150,
+  "uncompressedFileBytes": 2910346,
+  "newFiles": 65,
+  "newFileBytes": 1714790,
+  "budgetBytes": 8388608,
+  "forbiddenChanges": [],
+  "submodules": [],
+  "dependencyOrCacheFilesInGitCandidates": [],
+  "bundleCheck": "Unavailable. git bundle needs absent promisor objects and cannot create its temporary pack in the read-only .git. No actual final bundle size is claimed. The complete working-tree candidate file bytes are below 8 MiB.",
+  "commit": "Unavailable: .git/index.lock cannot be created in read-only .git."
+}

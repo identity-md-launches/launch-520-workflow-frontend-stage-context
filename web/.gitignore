@@ -1,0 +1,7 @@
+# Explicit allowance: web/.gitignore. Patterns apply at every nesting level.
+node_modules/
+.cache/
+.npm/
+test-results/
+playwright-report/
+*.tsbuildinfo

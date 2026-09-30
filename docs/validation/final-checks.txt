@@ -1,0 +1,14 @@
+Final checks: 2026-09-30 UTC
+
+npm run build --prefix web: exit 0 (includes tsc --noEmit and production Vite build)
+npm run check:export --prefix web: exit 0
+PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/home/imd-worker/.cache/ms-playwright/chromium-1208/chrome-linux64/chrome npm test --prefix web: exit 0
+29 passed (32.3s)
+npm run check:rpc --prefix web: exit 0 (read-only observation in rpc-check.txt)
+
+Final exported assets (excluding manifest): 19
+Final export bytes (including manifest): 676672
+All ABI/hash/network/manifest checks passed. See export-check.txt.
+No real transactions or publication performed.
+
+git add web dist docs: exit 128; .git/index.lock cannot be created because .git is read-only. No commit created in this worker.

@@ -1,0 +1,40 @@
+
+> comp-sepolia-interface@1.0.0 build
+> npm run typecheck && vite build && node scripts/export-deployment.mjs
+
+
+> comp-sepolia-interface@1.0.0 typecheck
+> tsc --noEmit
+
+vite v7.1.12 building for production...
+transforming...
+✓ 428 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/index.html                                              0.90 kB │ gzip:   0.46 kB
+../dist/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff    13.14 kB
+../dist/assets/ibm-plex-mono-latin-500-normal-CB9ihrfo.woff    13.16 kB
+../dist/assets/ibm-plex-mono-latin-600-normal-DWFSQ4vo.woff    13.21 kB
+../dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2   14.71 kB
+../dist/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2   14.89 kB
+../dist/assets/ibm-plex-mono-latin-600-normal-BgSNZQsw.woff2   15.62 kB
+../dist/assets/index-CvdorB5q.css                               9.35 kB │ gzip:   2.65 kB
+../dist/assets/ccip-C-djP3Vq.js                                 2.61 kB │ gzip:   1.24 kB
+../dist/assets/index-B9obxgOM.js                              497.90 kB │ gzip: 154.23 kB
+✓ built in 3.67s
+{
+  "status": "exported",
+  "sourceCommit": "c622a1dd8c1c9d94a16272080c765d00e9aba7ab",
+  "contractCount": 5,
+  "assetCount": 19,
+  "exportBytes": 676672,
+  "abiHashes": {
+    "LaunchToken": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+    "MockIMD": "785554a073881eadc16cf50ec69aefac00a95db003ed535556ed6a0f054c0e17",
+    "PriceFeed": "333fe01834bbc0b6131916860dafdde3d386c7b491f68d29d91dec03a61603bf",
+    "NhiFeed": "333fe01834bbc0b6131916860dafdde3d386c7b491f68d29d91dec03a61603bf",
+    "CDPVault": "a0dda71535f2de3d99e94ef64e866491366dc66cf0d7b8563ddff9550177b8c6",
+    "CompToken": "c80da5f74d5a8d99a762ded44c94029a0953469e050e85d74da380d751b74086",
+    "MockWorkOracle": "704b64283dcaed93661907220b38facfb1ac94aeaf53cb13b9be7a063147fac4"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-519-mockimd-pricefeed-nhifeed-cdpvault",
+  "version": 1,
+  "launchId": "e92c8d2b-42f2-471b-a573-81b63fe4b897",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Sepolia (11155111) deployment: LaunchToken is COMP Launch (CPL), separate from the elastic CompToken created by CDPVault. MockIMD, PriceFeed and NhiFeed deploy before CDPVault; every contract dependency is deployed by this launch. The vault's zero CompToken and oracle arguments create and permanently bind a fresh CompToken and MockWorkOracle during construction. CompToken.setVault is already closed and the vault's oracle is immutable when construction returns. No post-deployment initialization transaction exists, and the requester has no initialization authority. The source-pinned operator retains only the MockIMD mint and MockWorkOracle grantRights test faucets. Both feeds use the approved attester, $owner as sole relayer and reporter, payload chainId 1 (Ethereum mainnet), answerType 1 (uint256), quorum 1, maxAge 86400 seconds and maxDeviationBps 2000. The consumer EIP-712 domain uses the deployment chain and each feed address. The feeds cannot identify which question an attestation answers; the relayer must check it, including the first value and stale re-anchors. NhiFeed has no validated oracle question this round and uses reporter updates alone; its attestation path is live but unused. Feeds start unseeded and require accepted updates before feed-dependent vault operations. $owner resolves exclusively from policy and must match the workflow-approved operator; policy/source authority alignment remains a review requirement. The factory performs no initialization calls. The pool pairs CPL with native ETH, with fee 3000, tickSpacing 60, decimal sqrtPriceX96 initialPrice and no hook. The factory supplies the LP and MerkleDistributor. These notes do not grant deployment authority. Services own policy, source publication, signed artifact linkage, attestation, admission, deployment and frontend startup; this manifest does not attest that those checks have passed.",
+    "token": {
+      "name": "COMP Launch",
+      "symbol": "CPL",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "MockIMD",
+        "constructorArgs": []
+      },
+      {
+        "contract": "PriceFeed",
+        "constructorArgs": [
+          "0x5598aa9146215bc13eb26f2c692ad1461fd32982",
+          "$owner",
+          "1",
+          "1",
+          "$owner",
+          "0x0",
+          "0x0",
+          "1",
+          "86400",
+          "2000"
+        ]
+      },
+      {
+        "contract": "NhiFeed",
+        "constructorArgs": [
+          "0x5598aa9146215bc13eb26f2c692ad1461fd32982",
+          "$owner",
+          "1",
+          "1",
+          "$owner",
+          "0x0",
+          "0x0",
+          "1",
+          "86400",
+          "2000"
+        ]
+      },
+      {
+        "contract": "CDPVault",
+        "constructorArgs": [
+          "$contract:MockIMD",
+          "0x0",
+          "0x0",
+          "$contract:PriceFeed",
+          "$contract:NhiFeed"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0x32ca30e1a85a00911d5638deabf422f0735be9e9be591ada152fdcd7027e09c9",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0xd0fe552dc3aada9ac0e758ca4af985a86fdc488a",
+      "blockNumber": 11816555,
+      "creationCodeHash": "2c0730613492db74e42660fe98a387c163db8d2d140483c76037e39bd3c7f47f"
+    },
+    {
+      "name": "MockIMD",
+      "txHash": "0x32ca30e1a85a00911d5638deabf422f0735be9e9be591ada152fdcd7027e09c9",
+      "abiHash": "785554a073881eadc16cf50ec69aefac00a95db003ed535556ed6a0f054c0e17",
+      "address": "0xe44ab81ce23d34e29383dd158a1dffeb1c10d439",
+      "blockNumber": 11816555,
+      "creationCodeHash": "50af82e992afcfd74dbd1a3ef7983ef1e24c034d994ba21c5b377737f837cddc"
+    },
+    {
+      "name": "PriceFeed",
+      "txHash": "0x32ca30e1a85a00911d5638deabf422f0735be9e9be591ada152fdcd7027e09c9",
+      "abiHash": "333fe01834bbc0b6131916860dafdde3d386c7b491f68d29d91dec03a61603bf",
+      "address": "0x61e34e8eab213f04c846f8ddbccbbcbb2c36be45",
+      "blockNumber": 11816555,
+      "creationCodeHash": "baa2a5a23876d6cfa6eb7101c24654111e8fd89fdcf2339ec2158a3fa2b2c6d9"
+    },
+    {
+      "name": "NhiFeed",
+      "txHash": "0x32ca30e1a85a00911d5638deabf422f0735be9e9be591ada152fdcd7027e09c9",
+      "abiHash": "333fe01834bbc0b6131916860dafdde3d386c7b491f68d29d91dec03a61603bf",
+      "address": "0x5f8fb8ae28d5150615d8f2f0bb85f2442ca90004",
+      "blockNumber": 11816555,
+      "creationCodeHash": "baa2a5a23876d6cfa6eb7101c24654111e8fd89fdcf2339ec2158a3fa2b2c6d9"
+    },
+    {
+      "name": "CDPVault",
+      "txHash": "0x32ca30e1a85a00911d5638deabf422f0735be9e9be591ada152fdcd7027e09c9",
+      "abiHash": "a0dda71535f2de3d99e94ef64e866491366dc66cf0d7b8563ddff9550177b8c6",
+      "address": "0x12958d42d051c7b1cb804e122874f4a597678aad",
+      "blockNumber": 11816555,
+      "creationCodeHash": "291d54332a904d6a3b5a9b8719b26bd507b887ca00e517b975f540ba440b7962"
+    }
+  ],
+  "sourceCommit": "c622a1dd8c1c9d94a16272080c765d00e9aba7ab",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "b3a8b3c73455d5c1dac744030a27bff5a002286024ff937a1196d10a4266c3ff"
+}
